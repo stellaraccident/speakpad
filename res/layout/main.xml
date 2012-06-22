@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    a:layout_width="fill_parent"
+    a:layout_height="fill_parent">
+
+  <LinearLayout a:id="@+id/topBar"
+      a:orientation="vertical"
+      a:layout_width="fill_parent"
+      a:layout_height="wrap_content"
+      a:layout_alignParentTop="true">
+      
+      <LinearLayout
+         a:orientation="horizontal"
+         a:layout_width="fill_parent"
+         a:layout_height="wrap_content">
+          <Button a:id="@+id/btnRecentBack"
+              a:layout_width="wrap_content"
+              a:layout_height="wrap_content"
+              a:layout_gravity="center_vertical"
+              a:drawableLeft="@drawable/caretleft"/>
+          
+          <CheckBox a:id="@+id/cbRecentFavorite"
+              a:layout_width="wrap_content"
+              a:layout_height="wrap_content"
+              a:layout_gravity="center_vertical"
+              style="@style/StarButton"/>
+          
+          <TextView a:id="@+id/textRecent"
+              a:textSize="15dp"
+              a:gravity="center"
+              a:layout_gravity="center_vertical"
+              a:layout_weight="1"
+              a:layout_width="0dp"
+              a:layout_height="wrap_content"
+              a:ellipsize="end"
+              a:maxLines="3"/>
+          
+          <Button a:id="@+id/btnRecentForward"
+              a:layout_width="wrap_content"
+              a:layout_height="wrap_content"
+              a:layout_gravity="center_vertical"
+              a:drawableLeft="@drawable/caretright"/>
+          
+       </LinearLayout>
+  </LinearLayout>
+    
+  <LinearLayout a:id="@+id/bottomBar"
+      a:orientation="horizontal"
+      a:layout_width="fill_parent"
+      a:layout_height="wrap_content"
+      a:layout_alignParentBottom="true">
+
+      <Button a:id="@+id/btnClear" 
+          a:text="@string/clear"
+          a:layout_width="wrap_content"
+          a:layout_height="wrap_content"
+          />
+      <Button a:id="@+id/btnSpeak"
+          a:text="@string/speak"
+          a:layout_weight="1"
+          a:layout_width="0dp"
+          a:layout_height="wrap_content"/>
+      <Button a:id="@+id/btnShutUp"
+          a:text="@string/shut_up"
+          a:layout_width="wrap_content"
+          a:layout_height="wrap_content"/>
+      <Button a:id="@+id/btnShowFavorites"
+          a:drawableLeft="@android:drawable/btn_star"
+          a:layout_width="wrap_content"
+          a:layout_height="wrap_content"/>
+  </LinearLayout>
+
+  <LinearLayout
+      a:id="@+id/mainArea"
+      a:orientation="vertical"
+      a:layout_width="fill_parent"
+      a:layout_height="fill_parent"
+      a:layout_above="@id/bottomBar"
+      a:layout_below="@id/topBar">
+      
+    <EditText a:id="@+id/editMain"
+        a:layout_width="fill_parent"
+        a:layout_height="fill_parent"
+        a:inputType="textLongMessage|textMultiLine"
+        />
+  </LinearLayout>
+  
+</RelativeLayout>

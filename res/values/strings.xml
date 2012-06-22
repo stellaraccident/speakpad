@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, SpeakpadActivity!</string>
+    <string name="app_name">Speakpad</string>
+    <string name="speak">Speak</string>
+    <string name="clear">Clear</string>
+    <string name="shut_up">Shut Up</string>
+
+</resources>

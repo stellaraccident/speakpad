@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    a:id="@+id/root"
+    a:orientation="vertical"
+    a:layout_width="fill_parent"
+    a:layout_height="fill_parent">
+    
+    <ScrollView
+          a:layout_width="fill_parent"
+          a:layout_height="fill_parent">
+      <TableLayout a:id="@+id/favoriteTable"
+          a:layout_width="fill_parent"
+          a:layout_height="wrap_content">
+      </TableLayout>
+    </ScrollView>
+</LinearLayout>
